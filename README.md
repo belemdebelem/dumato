@@ -4,6 +4,7 @@ Este projeto, intitulado Du Mato - Produtos Naturais, consiste em uma loja virtu
 O projeto foi estruturado com foco em design responsivo, interatividade do usuário e persistência de dados essenciais.
 
 --------------------------------------------------------------------------------
+Link: https://belemdebelem.github.io/dumato/
 Funcionalidades Principais
 1. Carrinho de Compras Dinâmico: A seção "Carrinho" (carrinho.html ou #cart) permite que o usuário gerencie sua lista de compras.
     ◦ Persistência de Dados: O carrinho utiliza JavaScript e a API localStorage para salvar e carregar os itens adicionados, garantindo que a lista persista mesmo após o fechamento ou atualização da página (saveCart, loadCart).
