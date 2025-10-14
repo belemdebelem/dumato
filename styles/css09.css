@@ -1,0 +1,78 @@
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+
+body.dark-mode header,
+body.dark-mode nav {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+body.dark-mode footer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+}
+
+
+body.dark-mode .dish {
+  background: #2a2a2a;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+
+body.dark-mode .btn-default {
+  background: #444;
+  color: #fff;
+}
+
+body.dark-mode .btn-default:hover {
+  background: #666;
+}
+
+
+body.dark-mode a {
+  color: #9acdff;
+}
+
+body.dark-mode #nav_logo {
+  color: #ffcc66;
+}  
+body.dark-mode #cart_content {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+body.dark-mode .section-title,
+body.dark-mode .section-subtitle,
+body.dark-mode .item-name,
+body.dark-mode .item-quantity,
+body.dark-mode .item-price {
+    color: #e0e0e0; /* texto claro para o dark mode */
+}
+
+body.dark-mode .cart-item {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+}
+
+body.dark-mode #cart-actions .btn-default,
+body.dark-mode #add-item-container .btn-default {
+    background-color: #ffee8c;
+    color: #2a2a2a;
+}
+
+body.dark-mode #cart-actions .btn-default:hover,
+body.dark-mode #add-item-container .btn-default:hover {
+    background-color: #666;
+}
+
+body.dark-mode #add-item-container select {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #555;
+}

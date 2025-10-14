@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    align-items: center; 
+    padding: 30px 8%;
+    box-sizing: border-box;
+}
+
+body.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo {
+    font-size: 28px;
+    color: #993300;
+}
+
+#nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - Du Mato</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/menu.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/carrinho.css">
+    <link rel="stylesheet" href="styles/css09.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="navbar">
+            <i class="fa-solid fa-carrot" id="nav_logo">Du Mato</i>
+            
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="index.html#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#menu">Produtos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#testimonials">Cadastro</a>
+                </li>
+                <li class="nav-item-active">
+                    <a href="carrinho.html">Carrinho</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">
+                Peça aqui
+            </button>
+        </nav> 
+    </header>
+
+    <!-- Conteúdo do Carrinho -->
+    <main>
+        <section id="cart">
+            <div id="cart_content">
+                <h2 class="section-title">Carrinho</h2>
+                <h3 class="section-subtitle">Sua lista de compras</h3>
+
+                <!-- Lista dinâmica do carrinho -->
+                <ul id="cart-list">
+                    <!-- Itens serão preenchidos via JS -->
+                </ul>
+
+                <div id="cart-actions">
+                    <button class="btn-default" id="checkout-btn">Finalizar Compra</button>
+                    <button class="btn-default" id="frete-btn">Verificar Frete</button>
+                    <button class="btn-default" id="clear-cart">Esvaziar Carrinho</button>
+                </div>
+
+                <!-- Seleção de produto e adicionar à lista -->
+                <div id="add-item-container" style="display: flex; gap: 10px; margin-top: 20px;">
+                    <select id="item" class="btn-default" style="flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #ccc;">
+                        <option value="" disabled selected>Escolha um produto</option>
+                        <option value="Pimenta Calabresa" data-price="4.80">Pimenta Calabresa - R$ 4,80</option>
+                        <option value="Pimenta do Reino" data-price="4.80">Pimenta do Reino - R$ 4,80</option>
+                        <option value="Chimichuri" data-price="5.00">Chimichuri - R$ 5,00</option>
+                        <option value="Curcuma" data-price="5.00">Curcuma - R$ 5,00</option>
+                    </select>
+                    <button id="adicionar" class="btn-default">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Produtos</h2>
+            <h3 class="section-subtitle">Nossos mix especiais</h3>
+
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/pimenta-calabresa.jpg" class="dish-image" alt="" width="200" height="200">
+
+                    <h3 class="dish-title">
+                        Pimenta Calabresa
+                    </h3>
+
+                    <span class="dish-description">
+                        100g de pimenta calabresa.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 4,80</h4>
+                        <button onclick="location.href='carrinho.html'" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/pimenta-do-reino.jpg" class="dish-image" alt="" width="200" height="200">
+
+                    <h3 class="dish-title">
+                        Pimenta do Reino
+                    </h3>
+
+                    <span class="dish-description">
+                        100g de grãos de pimenta do reino.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$ 4,80</h4>
+                        <button onclick="location.href='carrinho.html'" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/chimichuri.jpg" class="dish-image" alt="" width="200" height="200">
+
+                    <h3 class="dish-title">
+                        Chimichuri
+                    </h3>
+
+                    <span class="dish-description">
+                        100g - Mix de ervas de origem argentina.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$5,00</h4>
+                        <button onclick="location.href='carrinho.html'" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+                    <img src="./images/curcuma.jpg" class="dish-image" alt="" width="200" height="200">
+
+                    <h3 class="dish-title">
+                        Curcuma
+                    </h3>
+
+                    <span class="dish-description">
+                        100g - Pó de cúrcuma.
+                    </span>
+
+                    <div class="dish-rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(500+)</span>
+                    </div>
+
+                    <div class="dish-price">
+                        <h4>R$5,00</h4>
+                        <button onclick="location.href='carrinho.html'" class="btn-default">
+                            <i class="fa-solid fa-basket-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <img src="src/images/wave.svg" alt="">
+
+        <div id="footer_items">
+            <span id="copyright">
+                &copy 2025 Du Mato
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="https://wa.me/5591993967754">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="https://www.instagram.com/dumatoervas">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="./scrip2.js"></script>
+</body>
+</html>
